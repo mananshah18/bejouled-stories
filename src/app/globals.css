@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 33, 33, 33;
+  --background-rgb: 255, 255, 255;
+  --accent-color: 184, 134, 11; /* Gold */
+  --secondary-color: 169, 169, 169; /* Silver */
+  --text-light: 120, 120, 120;
+  --border-light: 230, 230, 230;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Montserrat', sans-serif;
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn-primary {
+    @apply bg-[#B8860B] hover:bg-[#9B7300] text-white font-light py-2 px-6 uppercase tracking-wider text-sm transition-colors duration-300;
+  }
+  
+  .btn-outline {
+    @apply border border-[#B8860B] text-[#B8860B] hover:bg-[#B8860B] hover:text-white font-light py-2 px-6 uppercase tracking-wider text-sm transition-colors duration-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-none overflow-hidden shadow-sm border-b border-[#E6E6E6] hover:shadow-md transition-shadow duration-300;
+  }
+  
+  .input-field {
+    @apply bg-white border border-[#E6E6E6] px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#B8860B] focus:border-transparent;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-serif font-normal mb-6 text-center uppercase tracking-widest;
+  }
+
+  .section-subtitle {
+    @apply text-base text-[#787878] max-w-2xl mx-auto text-center mb-12 font-light;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B8860B;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9B7300;
+} 

@@ -1,0 +1,53 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pearlGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f9f6f3" />
+      <stop offset="100%" stop-color="#e9dfd3" />
+    </radialGradient>
+    <radialGradient id="goldGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#f8e27f" />
+      <stop offset="50%" stop-color="#f1c12a" />
+      <stop offset="100%" stop-color="#e0a81e" />
+    </radialGradient>
+    <linearGradient id="bangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8e27f" />
+      <stop offset="50%" stop-color="#e0a81e" />
+      <stop offset="100%" stop-color="#d49b18" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#f5efe9" />
+  <text x="50%" y="100" font-family="serif" font-size="40" fill="#8c7561" text-anchor="middle">Leela Pearl Bangle</text>
+  
+  <!-- Bangle -->
+  <g transform="translate(400, 300)">
+    <!-- Main bangle structure - outer -->
+    <ellipse cx="0" cy="0" rx="150" ry="80" fill="none" stroke="url(#bangleGradient)" stroke-width="20" />
+    
+    <!-- Main bangle structure - inner -->
+    <ellipse cx="0" cy="0" rx="130" ry="60" fill="none" stroke="url(#bangleGradient)" stroke-width="2" />
+    
+    <!-- Traditional pattern on bangle -->
+    <path d="M-150,0 Q-140,20 -130,0 Q-120,-20 -110,0 Q-100,20 -90,0 Q-80,-20 -70,0 Q-60,20 -50,0 Q-40,-20 -30,0 Q-20,20 -10,0 Q0,-20 10,0 Q20,20 30,0 Q40,-20 50,0 Q60,20 70,0 Q80,-20 90,0 Q100,20 110,0 Q120,-20 130,0 Q140,20 150,0" 
+          fill="none" stroke="#d49b18" stroke-width="2" />
+    
+    <!-- Pearls embedded in bangle -->
+    <circle cx="-130" cy="0" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+    <circle cx="-90" cy="0" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+    <circle cx="-50" cy="0" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+    <circle cx="-10" cy="0" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+    <circle cx="30" cy="0" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+    <circle cx="70" cy="0" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+    <circle cx="110" cy="0" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+    
+    <!-- Bangle clasp -->
+    <rect x="-155" y="-5" width="10" height="10" fill="url(#goldGradient)" rx="2" ry="2" />
+    <rect x="145" y="-5" width="10" height="10" fill="url(#goldGradient)" rx="2" ry="2" />
+  </g>
+  
+  <!-- Bangle shadow -->
+  <ellipse cx="400" cy="380" rx="150" ry="20" fill="#d4c5b5" opacity="0.3" />
+  
+  <text x="50%" y="500" font-family="sans-serif" font-size="24" fill="#8c7561" text-anchor="middle">Bejewelled Stories</text>
+  <text x="50%" y="540" font-family="sans-serif" font-size="18" fill="#8c7561" text-anchor="middle">Traditional Indian Jewelry with a Modern Touch</text>
+</svg> 

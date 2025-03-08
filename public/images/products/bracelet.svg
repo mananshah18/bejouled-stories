@@ -1,0 +1,39 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pearlGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f9f6f3" />
+      <stop offset="100%" stop-color="#e9dfd3" />
+    </radialGradient>
+    <radialGradient id="goldGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#f8e27f" />
+      <stop offset="50%" stop-color="#f1c12a" />
+      <stop offset="100%" stop-color="#e0a81e" />
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#f5efe9" />
+  <text x="50%" y="100" font-family="serif" font-size="40" fill="#8c7561" text-anchor="middle">Riya Pearl Bracelet</text>
+  
+  <!-- Bracelet -->
+  <ellipse cx="400" cy="300" rx="200" ry="100" fill="none" stroke="#e0a81e" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Pearls and gold beads -->
+  <circle cx="200" cy="300" r="20" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="240" cy="270" r="15" fill="url(#goldGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="280" cy="250" r="20" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="320" cy="240" r="15" fill="url(#goldGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="360" cy="230" r="20" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="400" cy="230" r="15" fill="url(#goldGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="440" cy="230" r="20" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="480" cy="240" r="15" fill="url(#goldGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="520" cy="250" r="20" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="560" cy="270" r="15" fill="url(#goldGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="600" cy="300" r="20" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  
+  <!-- Clasp -->
+  <rect x="190" y="300" width="20" height="10" fill="#e0a81e" rx="2" ry="2" />
+  <rect x="590" y="300" width="20" height="10" fill="#e0a81e" rx="2" ry="2" />
+  
+  <text x="50%" y="500" font-family="sans-serif" font-size="24" fill="#8c7561" text-anchor="middle">Bejewelled Stories</text>
+  <text x="50%" y="540" font-family="sans-serif" font-size="18" fill="#8c7561" text-anchor="middle">Traditional Indian Jewelry with a Modern Touch</text>
+</svg> 

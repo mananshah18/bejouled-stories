@@ -1,0 +1,78 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pearlGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f9f6f3" />
+      <stop offset="100%" stop-color="#e9dfd3" />
+    </radialGradient>
+    <radialGradient id="goldGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#f8e27f" />
+      <stop offset="50%" stop-color="#f1c12a" />
+      <stop offset="100%" stop-color="#e0a81e" />
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#f5efe9" />
+  <text x="50%" y="100" font-family="serif" font-size="40" fill="#8c7561" text-anchor="middle">Sita Layered Pearl Necklace</text>
+  
+  <!-- First layer (top) -->
+  <path d="M250,250 Q400,200 550,250" stroke="#e0a81e" stroke-width="2" fill="none" />
+  
+  <!-- Pearls on first layer -->
+  <circle cx="250" cy="250" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="290" cy="235" r="8" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="330" cy="220" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="370" cy="210" r="8" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="400" cy="200" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="430" cy="210" r="8" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="470" cy="220" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="510" cy="235" r="8" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="550" cy="250" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  
+  <!-- Second layer (middle) -->
+  <path d="M200,300 Q400,270 600,300" stroke="#e0a81e" stroke-width="2" fill="none" />
+  
+  <!-- Pearls on second layer -->
+  <circle cx="200" cy="300" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="240" cy="290" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="280" cy="280" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="320" cy="275" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="360" cy="270" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="400" cy="270" r="15" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="440" cy="270" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="480" cy="275" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="520" cy="280" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="560" cy="290" r="10" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="600" cy="300" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  
+  <!-- Third layer (bottom) -->
+  <path d="M150,350 Q400,340 650,350" stroke="#e0a81e" stroke-width="2" fill="none" />
+  
+  <!-- Pearls on third layer -->
+  <circle cx="150" cy="350" r="15" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="190" cy="348" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="230" cy="346" r="15" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="270" cy="344" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="310" cy="342" r="15" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="350" cy="341" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="400" cy="340" r="18" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="450" cy="341" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="490" cy="342" r="15" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="530" cy="344" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="570" cy="346" r="15" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="610" cy="348" r="12" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  <circle cx="650" cy="350" r="15" fill="url(#pearlGradient)" stroke="#e0a81e" stroke-width="1" />
+  
+  <!-- Gold connector elements -->
+  <circle cx="400" cy="240" r="5" fill="url(#goldGradient)" stroke="#e0a81e" stroke-width="0.5" />
+  <path d="M400,240 L400,270" stroke="#e0a81e" stroke-width="1" fill="none" />
+  
+  <circle cx="400" cy="310" r="5" fill="url(#goldGradient)" stroke="#e0a81e" stroke-width="0.5" />
+  <path d="M400,310 L400,340" stroke="#e0a81e" stroke-width="1" fill="none" />
+  
+  <!-- Clasps -->
+  <rect x="140" y="350" width="10" height="5" fill="url(#goldGradient)" rx="2" ry="2" />
+  <rect x="650" y="350" width="10" height="5" fill="url(#goldGradient)" rx="2" ry="2" />
+  
+  <text x="50%" y="500" font-family="sans-serif" font-size="24" fill="#8c7561" text-anchor="middle">Bejewelled Stories</text>
+  <text x="50%" y="540" font-family="sans-serif" font-size="18" fill="#8c7561" text-anchor="middle">Traditional Indian Jewelry with a Modern Touch</text>
+</svg> 

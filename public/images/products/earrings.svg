@@ -1,0 +1,38 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pearlGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f9f6f3" />
+      <stop offset="100%" stop-color="#e9dfd3" />
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#f5efe9" />
+  <text x="50%" y="100" font-family="serif" font-size="40" fill="#8c7561" text-anchor="middle">Kavya Pearl Earrings</text>
+  
+  <!-- Left Earring -->
+  <g transform="translate(250, 250)">
+    <!-- Silver hook -->
+    <path d="M0,0 C10,-10 20,-50 0,-80" stroke="#C0C0C0" stroke-width="3" fill="none" />
+    <!-- Silver work -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#C0C0C0" stroke-width="3" />
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#C0C0C0" stroke-width="1" />
+    <path d="M-20,-20 L20,20 M-20,20 L20,-20" stroke="#C0C0C0" stroke-width="1" fill="none" />
+    <!-- Pearl -->
+    <circle cx="0" cy="40" r="20" fill="url(#pearlGradient)" stroke="#C0C0C0" stroke-width="1" />
+  </g>
+  
+  <!-- Right Earring -->
+  <g transform="translate(550, 250)">
+    <!-- Silver hook -->
+    <path d="M0,0 C10,-10 20,-50 0,-80" stroke="#C0C0C0" stroke-width="3" fill="none" />
+    <!-- Silver work -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#C0C0C0" stroke-width="3" />
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#C0C0C0" stroke-width="1" />
+    <path d="M-20,-20 L20,20 M-20,20 L20,-20" stroke="#C0C0C0" stroke-width="1" fill="none" />
+    <!-- Pearl -->
+    <circle cx="0" cy="40" r="20" fill="url(#pearlGradient)" stroke="#C0C0C0" stroke-width="1" />
+  </g>
+  
+  <text x="50%" y="500" font-family="sans-serif" font-size="24" fill="#8c7561" text-anchor="middle">Bejewelled Stories</text>
+  <text x="50%" y="540" font-family="sans-serif" font-size="18" fill="#8c7561" text-anchor="middle">Traditional Indian Jewelry with a Modern Touch</text>
+</svg> 

@@ -1,0 +1,70 @@
+/* Comment out Google Fonts imports for now due to SSL issues */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 bg-pearl-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-gold-500 hover:bg-gold-600 text-white font-medium py-2 px-6 rounded-md transition duration-300 ease-in-out;
+  }
+  
+  .btn-secondary {
+    @apply bg-pearl-300 hover:bg-pearl-400 text-gray-800 font-medium py-2 px-6 rounded-md transition duration-300 ease-in-out;
+  }
+  
+  .btn-outline {
+    @apply border border-gold-500 text-gold-500 hover:bg-gold-50 font-medium py-2 px-6 rounded-md transition duration-300 ease-in-out;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Slick carousel customizations */
+.slick-dots li button:before {
+  @apply text-gold-500;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-gold-600;
+} 
