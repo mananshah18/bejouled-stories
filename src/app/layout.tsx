@@ -4,9 +4,9 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Bejewelled Stories | Traditional Indian Jewelry with a Modern Touch',
+  title: 'Bejewelled Stories | Exquisite Indian Jewelry with Contemporary Elegance',
   description: 'Discover our exquisite collection of pearl jewelry that brings traditional Indian craftsmanship with a contemporary twist to the modern American woman.',
-  keywords: 'pearl jewelry, Indian jewelry, contemporary jewelry, necklaces, earrings, bracelets',
+  keywords: 'luxury pearl jewelry, Indian jewelry, contemporary jewelry, necklaces, earrings, bracelets, luxury',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 font-sans">
+      <body className="bg-cream-50 text-navy-900 font-sans">
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">{children}</main>

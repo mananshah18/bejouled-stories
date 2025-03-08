@@ -2,19 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
 :root {
-  --foreground-rgb: 33, 33, 33;
-  --background-rgb: 255, 255, 255;
-  --accent-color: 184, 134, 11; /* Gold */
-  --secondary-color: 169, 169, 169; /* Silver */
-  --text-light: 120, 120, 120;
-  --border-light: 230, 230, 230;
+  --foreground-rgb: 16, 42, 67; /* Navy 900 */
+  --background-rgb: 254, 254, 254; /* Cream 50 */
+  --accent-color: 193, 146, 14; /* Gold 600 */
+  --secondary-color: 156, 163, 175; /* Silver 400 */
+  --text-light: 98, 125, 152; /* Navy 500 */
+  --border-light: 229, 231, 235; /* Silver 200 */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-light tracking-wider;
+  }
 }
 
 @layer components {
@@ -23,38 +33,58 @@ body {
   }
   
   .btn-primary {
-    @apply bg-[#B8860B] hover:bg-[#9B7300] text-white font-light py-2 px-6 uppercase tracking-wider text-sm transition-colors duration-300;
+    @apply bg-gold-600 hover:bg-gold-700 text-white font-light py-3 px-8 uppercase tracking-widest text-sm transition-all duration-300 shadow-elegant hover:shadow-soft;
   }
   
   .btn-outline {
-    @apply border border-[#B8860B] text-[#B8860B] hover:bg-[#B8860B] hover:text-white font-light py-2 px-6 uppercase tracking-wider text-sm transition-colors duration-300;
+    @apply border border-gold-600 text-gold-600 hover:bg-gold-50 hover:text-gold-700 font-light py-3 px-8 uppercase tracking-widest text-sm transition-all duration-300;
+  }
+  
+  .btn-dark {
+    @apply bg-navy-900 hover:bg-navy-800 text-white font-light py-3 px-8 uppercase tracking-widest text-sm transition-all duration-300 shadow-elegant hover:shadow-soft;
   }
   
   .card {
-    @apply bg-white rounded-none overflow-hidden shadow-sm border-b border-[#E6E6E6] hover:shadow-md transition-shadow duration-300;
+    @apply bg-white overflow-hidden shadow-elegant hover:shadow-soft transition-all duration-300;
+  }
+  
+  .card-luxury {
+    @apply bg-white overflow-hidden border-0.5 border-silver-200 hover:border-gold-300 transition-all duration-300;
   }
   
   .input-field {
-    @apply bg-white border border-[#E6E6E6] px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#B8860B] focus:border-transparent;
+    @apply bg-white border border-silver-200 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-gold-600 focus:border-transparent font-light;
   }
 
   .section-title {
-    @apply text-2xl md:text-3xl font-serif font-normal mb-6 text-center uppercase tracking-widest;
+    @apply text-2xl md:text-3xl lg:text-4xl font-display font-light mb-6 text-center uppercase tracking-widest text-navy-900;
   }
 
   .section-subtitle {
-    @apply text-base text-[#787878] max-w-2xl mx-auto text-center mb-12 font-light;
+    @apply text-base text-navy-500 max-w-2xl mx-auto text-center mb-12 font-light tracking-wide;
+  }
+  
+  .luxury-divider {
+    @apply w-24 h-0.5 bg-gold-600 mx-auto my-8;
+  }
+  
+  .nav-link {
+    @apply inline-flex items-center px-1 pt-1 border-b border-transparent text-sm font-light text-navy-500 hover:text-navy-900 hover:border-gold-600 uppercase tracking-widest transition-colors duration-300;
+  }
+  
+  .nav-link-active {
+    @apply inline-flex items-center px-1 pt-1 border-b border-gold-600 text-sm font-light text-navy-900 uppercase tracking-widest;
   }
 }
 
 .animate-fade-in {
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1.2s ease-out;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -62,20 +92,50 @@ body {
   }
 }
 
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f8f4ef; /* Cream 300 */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #B8860B;
+  background: #c4920e; /* Gold 600 */
   border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9B7300;
+  background: #936e0a; /* Gold 700 */
 } 
